@@ -1,0 +1,15 @@
+/* style.css */
+/* 2022-09-16 10:00:00 */
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--bs-warning);
+    margin: 1rem auto;
+    display: block;
+    background-image: url(../images/afdl.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
