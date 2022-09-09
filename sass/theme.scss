@@ -23,6 +23,8 @@ $btn-font-size: .9rem;
 
 $line-height-base : 1.9;
 
+$navbar-toggler-border-radius: .3rem;
+
 @import "./bs5/mixins/banner";
 @include bsBanner("");
 
