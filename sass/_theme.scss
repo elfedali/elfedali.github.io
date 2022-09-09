@@ -1,0 +1,248 @@
+// here is where you can customize the theme
+body {
+   letter-spacing: $letter-spacing;
+}
+
+.navbar {
+   .nav-link {
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: $letter-spacing;
+
+   }
+}
+
+.navbar-brand {
+   img {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: .5rem;
+      vertical-align: middle;
+   }
+
+   .title {
+
+      font-size: .8rem;
+      line-height: 1;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: $letter-spacing;
+
+      .first-name,
+      .last-name {
+
+         font-weight: 600;
+      }
+
+   }
+}
+
+// 
+
+
+// #hero
+#hero {
+   padding: 6rem 0;
+   background-image: url('../images/hero-img.jpg');
+   background-size: cover;
+   background-position: top;
+
+   p,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      color: #FFF;
+   }
+
+   // p.hello
+   p.hello {
+      font-size: 3rem;
+      font-weight: 100;
+      letter-spacing: $letter-spacing;
+      margin: 0;
+
+   }
+
+   // h1.me
+   h1.me {
+      font-size: 3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: $letter-spacing;
+      margin: 0;
+      display: inline-block;
+   }
+
+   // p.description
+   p.description {
+      font-size: 1.5rem;
+      font-weight: 100;
+      letter-spacing: $letter-spacing;
+      margin: 0;
+   }
+}
+
+// .btn
+
+.btn {
+
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: $letter-spacing;
+}
+
+// social links
+.social-link {
+   background: rgb(0, 0, 0);
+   display: inline-block;
+   color: #FFF;
+   text-decoration: none;
+   padding: .5rem 1rem;
+   border-radius: 3px;
+   margin-right: .5rem;
+}
+
+// .btn facebook
+.btn-facebook {
+   background: #3b5998;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background: #2d4373;
+      color: #FFF;
+   }
+}
+
+// .btn twitter
+.btn-twitter {
+   background: #1da1f2;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background: #0d8fd5;
+      color: #FFF;
+   }
+}
+
+// .btn linkedin
+.btn-linkedin {
+   background: #0077b5;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background: #005e8f;
+      color: #FFF;
+   }
+}
+
+// .btn github
+.btn-github {
+   background: #333;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background: #000;
+      color: #FFF;
+   }
+}
+
+// .btn instagram
+.btn-instagram {
+   background: #e4405f;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background: #c32f4b;
+      color: #FFF;
+   }
+}
+
+// .btn youtube
+.btn-youtube {
+   background: #ff0000;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background: #cc0000;
+      color: #FFF;
+   }
+}
+
+// img.my-picture
+img.my-picture {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   border: 10px solid rgba(255, 255, 255, 0.1);
+   margin-bottom: 1rem;
+
+}
+
+// section.section
+section.section {
+   padding: 6rem 0;
+   position: relative;
+}
+
+// div.card.card-intro
+div.card.card-intro {
+   background: $light;
+   height: 360px;
+
+   h2 {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+   }
+}
+
+//
+.project-img,
+.blog-img {
+   width: 100%;
+   height: 360px;
+   object-fit: cover;
+   object-position: center;
+
+   background-image: url('../images/1.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+
+// section contact
+section#contact {
+   background: $light;
+   padding: 6rem 0;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+
+}
+
+// form-group
+.form-group {
+   margin-bottom: 1rem;
+
+   label {
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+   }
+}
+
+// ul 
+ul {
+   line-height: 2.5;
+}
