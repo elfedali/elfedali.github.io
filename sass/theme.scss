@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700&display=swap');
 // Global letter spacing
 $letter-spacing: .1rem;
 
 //
-$font-family-base : 'MADE TOMMY',
-sans-serif;
+$font-family-base : "Archivo","Maven Pro", sans-serif;
 $font-weight-base : 400;
 $font-size-base : 1rem;
 
 $border-radius: 2rem;
-$border-width : 2px;
+$border-width : 1px;
 
 //$primary : #8000FF;
 
@@ -17,7 +18,7 @@ $card-border-color : transparent;
 
 $input-border-radius: .3rem;
 $input-focus-box-shadow: none;
-
+$border-color  : #000;
 $btn-font-size: .9rem;
 
 

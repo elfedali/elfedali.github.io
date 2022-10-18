@@ -6,10 +6,9 @@ body {
 .navbar {
    .nav-link {
       text-transform: uppercase;
-      font-size: .8rem;
+      font-size: 0.8rem;
       font-weight: 600;
       letter-spacing: $letter-spacing;
-
    }
 }
 
@@ -18,13 +17,12 @@ body {
       display: inline-block;
       width: 40px;
       height: 40px;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       vertical-align: middle;
    }
 
    .title {
-
-      font-size: .8rem;
+      font-size: 0.8rem;
       line-height: 1;
       font-weight: 400;
       text-transform: uppercase;
@@ -32,22 +30,44 @@ body {
 
       .first-name,
       .last-name {
-
          font-weight: 600;
       }
-
    }
 }
 
-// 
+//
 
-
+.sep__header {
+   height: 64px;
+}
 // #hero
 #hero {
-   padding: 6rem 0;
-   background-image: url('../images/hero-img.jpg');
+   //background-image: url('../images/hero-img.jpg');
+   background-color: $white;
    background-size: cover;
    background-position: top;
+   @include media-breakpoint-up(lg){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+     
+
+   }
+
+   @include media-breakpoint-down(lg){
+      display: block;
+      .hero-text{
+          border-right: none  !important;
+        
+         border-bottom: $border-width solid $border-color;
+      }
+   }
+
+   & > div {
+      &:nth-child(1) {
+         padding: 2rem;
+      }
+   }
 
    p,
    h1,
@@ -56,7 +76,6 @@ body {
    h4,
    h5,
    h6 {
-      color: #FFF;
    }
 
    // p.hello
@@ -65,12 +84,11 @@ body {
       font-weight: 100;
       letter-spacing: $letter-spacing;
       margin: 0;
-
    }
 
    // h1.me
    h1.me {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: $letter-spacing;
@@ -90,7 +108,6 @@ body {
 // .btn
 
 .btn {
-
    font-weight: 600;
    text-transform: uppercase;
    letter-spacing: $letter-spacing;
@@ -99,24 +116,24 @@ body {
 // social links
 .social-link {
    display: inline-block;
-   color: #fff;
+   color: black;
    text-decoration: none;
-   padding: .5rem .3rem 0.5rem .5rem;
+   padding: 0.5rem 0.3rem 0.5rem 0.5rem;
    border-radius: 4px;
 
    line-height: 1;
-   font-size: 2rem;
+   font-size: 1rem;
 }
-
+/*
 // .btn facebook
 .btn-facebook {
    background: #3b5998;
 
-   transition: all .3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 
    &:hover {
       background: #2d4373;
-      color: #FFF;
+      color: #fff;
    }
 }
 
@@ -124,11 +141,11 @@ body {
 .btn-twitter {
    background: #1da1f2;
 
-   transition: all .3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 
    &:hover {
       background: #0d8fd5;
-      color: #FFF;
+      color: #fff;
    }
 }
 
@@ -136,11 +153,11 @@ body {
 .btn-linkedin {
    background: #0077b5;
 
-   transition: all .3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 
    &:hover {
       background: #005e8f;
-      color: #FFF;
+      color: #fff;
    }
 }
 
@@ -148,11 +165,11 @@ body {
 .btn-github {
    background: #333;
 
-   transition: all .3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 
    &:hover {
       background: #000;
-      color: #FFF;
+      color: #fff;
    }
 }
 
@@ -160,11 +177,11 @@ body {
 .btn-instagram {
    background: #e4405f;
 
-   transition: all .3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 
    &:hover {
       background: #c32f4b;
-      color: #FFF;
+      color: #fff;
    }
 }
 
@@ -172,27 +189,23 @@ body {
 .btn-youtube {
    background: #ff0000;
 
-   transition: all .3s ease-in-out;
+   transition: all 0.3s ease-in-out;
 
    &:hover {
       background: #cc0000;
-      color: #FFF;
+      color: #fff;
    }
 }
 
+*/
 // img.my-picture
 img.my-picture {
    width: 200px;
    height: 200px;
-   border-radius: 50%;
-   border: 10px solid rgba(255, 255, 255, 0.1);
-   margin-bottom: 1rem;
-
 }
 
 // section.section
 section.section {
-   padding: 6rem 0;
    position: relative;
 }
 
@@ -215,14 +228,14 @@ div.card.card-intro {
    object-fit: cover;
    object-position: center;
 
-   background-image: url('../images/1.jpg');
+   background-image: url("../images/1.jpg");
    background-size: cover;
    background-position: center;
 }
 
-
 // section contact
-section#contact {}
+section#contact {
+}
 
 // form-group
 .form-group {
@@ -231,11 +244,60 @@ section#contact {}
    label {
       font-weight: 600;
       text-transform: uppercase;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
    }
 }
 
-// ul 
+// ul
 ul {
    line-height: 2.5;
+}
+
+// right grid
+
+.right-grid {
+   display: grid;
+   grid-template-columns: auto 200px;
+
+   & > div {
+      &:nth-child(1) {
+      }
+      &:nth-child(2) {
+      }
+   }
+}
+
+.my-info {
+   display: grid;
+   grid-template-columns: auto;
+   & > div {
+      padding: 2rem;
+   }
+}
+
+// about
+#about {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   & > div {
+      &:nth-child(1) {
+         padding: 2rem;
+      }
+      &:nth-child(2) {
+         padding: 2rem;
+      }
+   }
+   @include media-breakpoint-down(lg){
+      display: block;
+       .left--section{
+            border-right: none  !important;
+         
+            border-bottom: $border-width solid $border-color;
+       }  
+   }
+}
+
+//
+.infos {
+   background: linen;
 }
