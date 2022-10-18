@@ -56,6 +56,7 @@ body {
 
    @include media-breakpoint-down(lg){
       display: block;
+      border-bottom: none  !important;
       .hero-text{
           border-right: none  !important;
         
@@ -202,6 +203,12 @@ body {
 img.my-picture {
    width: 200px;
    height: 200px;
+   @include media-breakpoint-down(lg){
+      width: 300px;
+      height: 300px;
+
+      border-right: $border-width solid $border-color;
+   }
 }
 
 // section.section
@@ -259,6 +266,22 @@ ul {
    display: grid;
    grid-template-columns: auto 200px;
 
+   @include media-breakpoint-down(lg){
+      display: block;
+      .my-info{
+         border-right: none  !important;
+         border-bottom: $border-width solid $border-color;
+      }
+      & > div {
+      &:nth-child(1) {
+         border-right: none !important;
+      }
+      &:nth-child(2) {
+       
+      }
+   }
+
+   }
    & > div {
       &:nth-child(1) {
       }
