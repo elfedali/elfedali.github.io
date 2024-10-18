@@ -1,0 +1,8 @@
+#  - .vscode/settings.json
+.vscode
+# node modules
+node_modules
+# compiled output
+/dist
+# ds store files
+.DS_Store
