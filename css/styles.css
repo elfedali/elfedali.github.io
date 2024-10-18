@@ -3,4 +3,17 @@ figure .box {
   background: rgba(0, 0, 0, 0.02);
   margin-top: 0.5rem;
   border-radius: var(--pico-border-radius);
+  /* 
+    margin-bottom: var(--pico-block-spacing-vertical);
+    padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal); */
+  border-radius: var(--pico-border-radius);
+  background: var(--pico-card-background-color);
+  box-shadow: var(--pico-card-box-shadow);
+}
+
+.logo {
+  background-color: white;
+  display: inline-block;
+  border-radius: 0.1rem;
+  padding-right: 0.3rem;
 }
