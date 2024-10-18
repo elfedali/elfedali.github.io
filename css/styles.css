@@ -1,0 +1,6 @@
+figure .box {
+  padding: 1.2rem;
+  background: rgba(0, 0, 0, 0.02);
+  margin-top: 0.5rem;
+  border-radius: var(--pico-border-radius);
+}
